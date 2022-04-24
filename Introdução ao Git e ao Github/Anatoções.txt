@@ -2,3 +2,139 @@ Link para download do Git:
 https://git-scm.com/download/win
 
 Gitbash é um terminal extendido para otimizar o uso do GIT
+
+Passo a passo para clonar o Repositório:
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub
+$ git clone https://github.com/Letyshort/dio-desafio-github-primeiro-repositorio.git
+Cloning into 'dio-desafio-github-primeiro-repositorio'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub
+$ cd dio-desafio-github-primeiro-repositorio/
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "Introdu\303\247\303\243o ao Git e ao Github/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git add .
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ status
+bash: status: command not found
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "Introdu\303\247\303\243o ao Git e ao Github/Anato\303\247\303\265es.txt"
+
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git commit -m "Inclusão das anotações do curso de Git/Github"
+[main c72ee3a] Inclusão das anotações do curso de Git/Github
+ 1 file changed, 4 insertions(+)
+ create mode 100644 "Introdu\303\247\303\243o ao Git e ao Github/Anato\303\247\303\265es.txt"
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 490 bytes | 40.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Letyshort/dio-desafio-github-primeiro-repositorio.git
+   ba1fbc6..c72ee3a  main -> main
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Certificados BootCamp Banco Carrefour Woman Developer/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git add .
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Certificados BootCamp Banco Carrefour Woman Developer/CERTIFICADO BOAS VINDAS AO BOOTCAMP BANCO CARREFOUR WOMAN DEVELOPER.pdf
+        new file:   "Certificados BootCamp Banco Carrefour Woman Developer/Criando seu Primeiro Rep\303\263sit\303\263rio no Github para Compartilhar seu Progresso.pdf"
+        new file:   "Certificados BootCamp Banco Carrefour Woman Developer/Introdu\303\247\303\243o ao Git e Github.pdf"
+        new file:   "Certificados BootCamp Banco Carrefour Woman Developer/L\303\263gica de Programa\303\247\303\243o Essencial.pdf"
+        new file:   Certificados BootCamp Banco Carrefour Woman Developer/Pensamento Computacional.pdf
+        new file:   "Certificados BootCamp Banco Carrefour Woman Developer/Projetos \303\201geis com Scrum.pdf"
+
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git commit -m "Inclusão dos Certificados do Bootcamp Banco Carrefour Woman Developer"
+[main 61ea360] Inclusão dos Certificados do Bootcamp Banco Carrefour Woman Developer
+ 6 files changed, 1688 insertions(+)
+ create mode 100644 Certificados BootCamp Banco Carrefour Woman Developer/CERTIFICADO BOAS VINDAS AO BOOTCAMP BANCO CARREFOUR WOMAN DEVELOPER.pdf
+ create mode 100644 "Certificados BootCamp Banco Carrefour Woman Developer/Criando seu Primeiro Rep\303\263sit\303\263rio no Github para Compartilhar seu Progresso.pdf"
+ create mode 100644 "Certificados BootCamp Banco Carrefour Woman Developer/Introdu\303\247\303\243o ao Git e Github.pdf"
+ create mode 100644 "Certificados BootCamp Banco Carrefour Woman Developer/L\303\263gica de Programa\303\247\303\243o Essencial.pdf"
+ create mode 100644 Certificados BootCamp Banco Carrefour Woman Developer/Pensamento Computacional.pdf
+ create mode 100644 "Certificados BootCamp Banco Carrefour Woman Developer/Projetos \303\201geis com Scrum.pdf"
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ftoma@LAPTOP-KTLK30B2 MINGW64 /d/DIO LÊ/Git-GitHub/dio-desafio-github-primeiro-repositorio (main)
+$ git push origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 847.35 KiB | 8.92 MiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/Letyshort/dio-desafio-github-primeiro-repositorio.git
+   c72ee3a..61ea360  main -> main
+
+
